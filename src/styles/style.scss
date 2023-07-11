@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/Roboto-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    color: red;
+    background-image: url("../assets/Check.svg");
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
