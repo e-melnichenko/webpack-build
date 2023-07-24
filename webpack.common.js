@@ -8,12 +8,15 @@ module.exports = {
     print: './src/js/print.js',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.[contenthash].js',
+    assetModuleFilename: '[name].[contenthash][ext]',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+    }),
     new HtmlWebpackPlugin({
       title: 'hello',
       template: './src/index.html'
