@@ -43,6 +43,8 @@
     "lodash": "4.17.21"
   },
   "browserslist": [
-    "iOS >= 4"
+    "last 2 versions",
+    "> 0.5%",
+    "not dead"
   ]
 }
